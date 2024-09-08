@@ -17,6 +17,13 @@ const Transaction = ({ transaction }) => {
       key={transaction.id}
       className={transaction.amount < 0 ? "minus" : "plus"}
     >
+      <div
+        className={`ribbon ${
+          transaction.amount > 0 ? "ribbon-credit" : "ribbon-debit"
+        }`}
+      >
+        {transaction.amount > 0 ? "Credit" : "Debit"}
+      </div>
       <div>
         <p style={{ margin: 0 }}>{checkCharacters(transaction.text)}</p>
 
