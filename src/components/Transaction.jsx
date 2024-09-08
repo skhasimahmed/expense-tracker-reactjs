@@ -7,11 +7,10 @@ const Transaction = ({ transaction }) => {
   const { deleteTransaction } = useContext(GlobalContext);
 
   const checkCharacters = (str) => {
-    const max = 35;
+    const max = 25;
     return str.length > max ? str.substring(0, max) + "..." : str;
   };
 
-  const sign = transaction.amount < 0 ? "-" : "+";
   return (
     <li
       key={transaction.id}
@@ -39,7 +38,7 @@ const Transaction = ({ transaction }) => {
         </span>
       </div>
       <div style={{ display: "flex", alignItems: "center" }}>
-        {sign}₹{Math.abs(transaction.amount)}
+        ₹{Math.abs(transaction.amount)}
       </div>
       <button
         className="delete-btn"
