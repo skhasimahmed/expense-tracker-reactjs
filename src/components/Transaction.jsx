@@ -7,7 +7,7 @@ const Transaction = ({ transaction }) => {
   const { deleteTransaction } = useContext(GlobalContext);
 
   const checkCharacters = (str) => {
-    const max = 35;
+    const max = 25;
     return str.length > max ? str.substring(0, max) + "..." : str;
   };
 
