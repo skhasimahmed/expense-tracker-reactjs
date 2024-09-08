@@ -185,4 +185,21 @@ input[type='number'] {
   .container {
     width: 300px;
   }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p#money-plus,
+  p#money-minus {
+    font-size: 18px;
+  }
+
+  .list li p {
+    font-size: 13px;
+  }
+
+  .list li span {
+    font-size: 9px !important;
+  }
 }

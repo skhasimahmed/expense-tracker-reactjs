@@ -38,7 +38,7 @@ const Transaction = ({ transaction }) => {
         </span>
       </div>
       <div style={{ display: "flex", alignItems: "center" }}>
-        ₹{Math.abs(transaction.amount)}
+        <p>₹{Math.abs(transaction.amount)}</p>
       </div>
       <button
         className="delete-btn"
